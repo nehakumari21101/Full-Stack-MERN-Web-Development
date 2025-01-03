@@ -1,0 +1,38 @@
+/* #root{
+    background: blue;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transition: margin-top 2s ease-in 0.2s;
+}
+
+#root:hover{
+    margin-top: 500px;
+    background: pink;
+} */
+
+.outer{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    position: absolute;
+    border-radius: 100%;
+}
+
+
+.first, .second{
+    width: 20px;
+    height: 20px;
+    background: black;
+    margin-top: 10px;
+    margin-left: 800px
+    display: inline-block;
+}
+.mouth{
+    width: 100px;
+    height: 40px;
+    background: red;
+    margin-top: 40px;
+    margin-left: 50px;
+    position:absolute;
+}

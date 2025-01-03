@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_box{
+    background: url("photo.jpg") ;
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one{
+    position:absolute;
+    line-height: 40px;
+    color: white;
+    font-size: 25px;
+    margin-left: 16px;
+}
+
+.sidebar_menu{
+    position:fixed;
+    /* margin-left: -300px; */
+    width: 200px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5)
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.btn_two{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 180px
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i, a{
+    text-decoration:none;
+    color: white;
+    marging: 5px;
+}
+.sidebar_menu .menu  a{
+    margin-left: 5px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 550px;
+    /* margin-bottom: 35%; */
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+#check{
+    display:none;
+}
