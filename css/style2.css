@@ -9,21 +9,23 @@
     background-size: cover;
 }
 
-.btn_one{
+.btn_one i{
     position:absolute;
     line-height: 40px;
     color: white;
     font-size: 25px;
     margin-left: 16px;
+    cursor: pointer;
 }
 
 .sidebar_menu{
     position:fixed;
-    /* margin-left: -300px; */
+    margin-left: -300px;
     width: 200px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5)
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear ;
 }
 
 .sidebar_menu .logo {
@@ -43,7 +45,11 @@
 .btn_two{
     position:absolute;
     margin-top: 10px;
-    margin-left: 180px
+    margin-left: 180px;
+    cursor:pointer;
+}
+.btn_two i{
+    cursor:pointer;
 }
 
 .sidebar_menu .menu{
@@ -82,4 +88,25 @@
 
 #check{
     display:none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+
+}
+
+.btn_one:hover{
+    font-size: 40px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+}
+
+#check:checked ~ .sidebar_menu{
+    margin-left: 0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
 }
