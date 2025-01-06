@@ -16,9 +16,14 @@ body {
 }
 
 .main-content {
-  background: blue;
+  background: black;
   flex: 1;
   overflow: auto;
+  
+  background: #121212;
+  height: 100vh;
+  margin: 0.6rem;
+  
 }
 
 .music-player {
@@ -116,4 +121,38 @@ a {
     margin-top: 0.5rem;
     height: 2rem;
     width: fit-content
+}
+
+.main-box{
+  background: #121212;
+  height: 100vh;
+  margin: 0.6rem;
+}
+
+.sticky-nav{
+  position: sticky;
+  top: 0;
+  background:black;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons{
+  margin-left: 1rem;
+}
+.sticky-nav-icons i{
+  font-size: 1.4rem;
+  margin-left: 0.4rem;
+}
+
+.sticky-nav-options{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.nav-item{
+  margin-right: 1rem;
 }
