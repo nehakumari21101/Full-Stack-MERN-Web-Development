@@ -75,6 +75,10 @@ a {
   height: 100%;
 }
 
+.lib-icon{
+  width: 1.5rem;
+}
+
 .options {
   display: flex;
   justify-content: space-between;
