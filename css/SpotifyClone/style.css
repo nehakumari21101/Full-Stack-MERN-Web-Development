@@ -214,11 +214,16 @@ a {
   align-items: center;
 }
 
+/* .footer-content{
+  display: grid;
+} */
+
 .line{
   background: white;
   height: 0.1%;
   opacity: 0.3;
   width: 94%;
+  /* margin-top: 10rem; */
 }
 
 .music-player{
