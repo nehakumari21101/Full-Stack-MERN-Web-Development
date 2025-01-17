@@ -18,9 +18,23 @@ console.log(arr);
 let number = 287152;
 let count = 0;
 
-while(number>0){
-    number = Math.floor(number % 10);
+let copy = number;
+
+while(copy>0){
+    copy = Math.floor(copy/10);
     count++;
 }
 
-console.log(number);
+console.log(count);
+
+
+// Find sum of digits in a number
+
+// let number2 = 287152;
+// let sum = 0;
+
+// while(number2 > 0){
+//     let rem = number2 %10;
+//     sum+=rem;
+//     number2 = Math.floor(number2/10);
+// }
