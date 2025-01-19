@@ -38,3 +38,25 @@ console.log(count);
 //     sum+=rem;
 //     number2 = Math.floor(number2/10);
 // }
+
+console.log("------------------");
+
+// function that returns array elements larger than a number num
+
+let arr2 = [3, 9, 1, 6, 11];
+let num2 = 6;
+
+function getElements(arr, num){
+    for(let i=0; i<arr.length; i++){
+        if (arr[i] > num ){
+            console.log(arr[i]);
+        }
+    }
+}
+
+getElements(arr2, num2);
+
+console.log("--------------------");
+
+
+
