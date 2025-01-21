@@ -2,8 +2,9 @@ let btn = document.querySelector("button");
 let input = document.querySelector("input");
 let ul = document.querySelector("ul");
 
-btn.addEventListener("click", function(){
-    let item = document.createElement("li");
+btn.addEventListener("click", function () {
+  let item = document.createElement("li");
+  if (input.value !== "") {
     item.innerText = input.value;
 
     let delBtn = document.createElement("button");
@@ -12,13 +13,17 @@ btn.addEventListener("click", function(){
     item.appendChild(delBtn);
 
     ul.appendChild(item);
-    input.value="";
-})
+  } else {
+    alert("Please enter a value to add to the list.");
+  }
 
-ul.addEventListener("click", function(event){
-    if(event.target.nodeName == "BUTTON"){
-        let listItem = event.target.parentElement;
-        listItem.remove();
-        console.log("deleted")
-    }
-})
+  input.value = "";
+});
+
+ul.addEventListener("click", function (event) {
+  if (event.target.nodeName == "BUTTON") {
+    let listItem = event.target.parentElement;
+    listItem.remove();
+    console.log("deleted");
+  }
+});
