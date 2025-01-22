@@ -1,0 +1,44 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+.btns-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+    border: 6px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.red{
+    background: #df4545fc;
+}
+
+.orange{
+    background: #e3a32e;
+}
+.blue{
+    background: #39398ded;
+}
+
+.green{
+    background: #045304d6;
+}
+
+.flash{
+    background: white;
+}
