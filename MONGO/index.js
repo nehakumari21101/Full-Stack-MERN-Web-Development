@@ -5,7 +5,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/college");
+  await mongoose.connect("mongodb://127.0.0.1:27017/test");
 }
 
 
@@ -14,7 +14,21 @@ const userSchema = new mongoose.Schema({
     email: String,
     age: Number
 })
-const User = mongoose.model("User", userSchema); // Student collection name
+const User = mongoose.model("User", userSchema); 
+// Student collection name
+// model represent collection and obj of model represent document
 
-// const kitty = new Cat({ name: "Zildjian" });
-// kitty.save().then(() => console.log("meow"));
+// const user1 = new User({
+//   name: "Adam",
+//   email: "adam@yahoo.in",
+//   age: 33,
+// })
+// user1.save();
+
+
+// User.insertMany([
+//   {name: "Tony", email: "tony@gmail.com", age: 50},
+//   {name: "Peter", email: "peter@gmail.com", age: 50}
+// ]).then((res)=>{
+//   console.log(res);
+// })
